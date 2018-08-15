@@ -1,0 +1,13 @@
+server:
+  port: 8084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: SelfDrivingEnqueryService-8084
+    prefer-ip-address: true
+spring:
+  application:
+    name: SelfDrivingEnqueryService

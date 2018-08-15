@@ -1,0 +1,40 @@
+server:
+  port: 8001
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.zhi.dachuang.entities       # 所有Entity别名类所在包
+  mapper-locations:
+  - mybatis/mapper/**/*.xml                # mapper映射文件
+
+spring:
+   application:
+    name: register
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dachuang
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+   jpa:
+     hibernate:
+       ddl-auto: update
+     show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: register-8001
+    prefer-ip-address: true
+
+info:
+  app.name: xiaozhizhi
+  company.name: 小智智有限公司
+  build.artifact: userservice
+  build.version: 1.0-SNAPSHOT

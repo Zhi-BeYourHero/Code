@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="eurekaserver" />
+        <module name="register" />
+        <module name="SelfDrivingEnqueryService" />
+        <module name="TaxiEnqueryService" />
+        <module name="UserService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="dachuang" target="1.8" />
+      <module name="eurekaserver" target="1.8" />
+      <module name="login" target="1.8" />
+      <module name="register" target="1.8" />
+      <module name="SelfDrivingEnqueryService" target="1.8" />
+      <module name="TaxiEnqueryService" target="1.8" />
+      <module name="UserService" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

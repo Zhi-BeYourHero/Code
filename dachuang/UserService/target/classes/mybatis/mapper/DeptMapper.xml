@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhi.dachuang.dao.UserDao">
+
+	<select id="findAll" resultType="User">
+		select id,username,email from user;
+	</select>
+
+	<select id="findByName" resultType="User" parameterType="String">
+		select id,username,password,email from user where username=#{username};
+	</select>
+
+
+</mapper>
+ 
+
